@@ -2,7 +2,7 @@ var fs = require('fs'),
     path = require('path');
 
 fs.open(path.resolve(__dirname, 'my-file.txt'), 'a+', function (err, fd) {
-    var writeBuffer = new Buffer('7'),
+    var writeBuffer = new Buffer('replaced'),
         bufferOffset = 0,
         bufferLength = writeBuffer.length,
         filePosition = 10;
